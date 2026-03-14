@@ -30,6 +30,18 @@ const Navigation = () => {
       path: '/order',
       icon: ShoppingBag,
       description: 'Your order history'
+    },
+    {
+      name: 'Offer',
+      path: '/offer',
+      icon: ShoppingBag,
+      description: 'Get the latest offer'
+    },
+    {
+      name: 'Sign In',
+      path: '/sign-in',
+      icon: ShoppingBag,
+      description: 'Login to your existing account'
     }
   ];
 
@@ -60,11 +72,10 @@ const Navigation = () => {
                 <li key={item.name}>
                   <Link
                     to={item.path}
-                    className={`flex items-center gap-3 p-3 rounded-lg transition-all duration-200 hover:bg-primary/5 ${
-                      active
-                        ? 'bg-primary/10 text-primary border border-primary/20'
-                        : 'text-text hover:text-primary'
-                    }`}
+                    className={`flex items-center gap-3 p-3 rounded-lg transition-all duration-200 hover:bg-primary/5 ${active
+                      ? 'bg-primary/10 text-primary border border-primary/20'
+                      : 'text-text hover:text-primary'
+                      }`}
                   >
                     <Icon size={20} />
                     <div>
@@ -98,11 +109,10 @@ const Navigation = () => {
                       <Link
                         to={item.path}
                         onClick={() => setIsOpen(false)}
-                        className={`flex items-center gap-3 p-3 rounded-lg transition-all duration-200 hover:bg-primary/5 ${
-                          active
-                            ? 'bg-primary/10 text-primary border border-primary/20'
-                            : 'text-text hover:text-primary'
-                        }`}
+                        className={`flex items-center gap-3 p-3 rounded-lg transition-all duration-200 hover:bg-primary/5 ${active
+                          ? 'bg-primary/10 text-primary border border-primary/20'
+                          : 'text-text hover:text-primary'
+                          }`}
                       >
                         <Icon size={20} />
                         <div>
