@@ -9,6 +9,7 @@ import { FunnelProvider } from './context/FunnelContext';
 import OfferView from './pages/OfferView';
 import NotFound from './pages/NotFound';
 import AuthView from './pages/AuthView';
+import CartView from './pages/CartView';
 
 function App() {
   return (
@@ -28,6 +29,9 @@ function App() {
                 <Route path="/products" element={<ProductsPage />} />
                 <Route path="/payment/:orderId" element={<PaymentView />} />
                 <Route path="/order" element={<OrderView />} />
+                <Route path="/cart" element={<CartView />} />
+
+
               </Routes>
             </div>
           </div>

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Home, CreditCard, ShoppingBag } from 'lucide-react';
+import { Menu, X, Home, CreditCard, ShoppingBag, BaggageClaim, TicketPercent, LogIn } from 'lucide-react';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,14 +34,20 @@ const Navigation = () => {
     {
       name: 'Offer',
       path: '/offer',
-      icon: ShoppingBag,
+      icon: TicketPercent,
       description: 'Get the latest offer'
     },
     {
       name: 'Sign In',
       path: '/sign-in',
-      icon: ShoppingBag,
+      icon: LogIn,
       description: 'Login to your existing account'
+    },
+    {
+      name: 'Cart',
+      path: '/Cart',
+      icon: BaggageClaim,
+      description: 'Your wishlisted products'
     }
   ];
 
