@@ -30,13 +30,6 @@
 
 body {
   @apply bg-background text-text antialiased transition-colors duration-300;
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  background-color: #fcfeff;
 }
 
 .container {
